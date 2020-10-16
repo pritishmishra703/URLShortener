@@ -30,6 +30,7 @@ def index(request):
 
     return render(request, "index.htm")
 
+
 def shorten(request, id):
     url = Url.objects.filter(short_link=id)
     link = ""
